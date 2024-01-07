@@ -3,7 +3,11 @@ This is a project using open prices of gold, platinum, USD, crude oil and CNN fe
 # Author 
 Ruijia Dai, Zahra Khorasani Zavareh
 # Huggingface link
-https://huggingface.co/spaces/ArtificialCoincidence/Daily_Gold_Highest_Price_Prediction
+https://huggingface.co/spaces/ArtificialCoincidence/Daily_Gold_Highest_Price_Prediction \
+User can:
+1. See prediction of today's highest gold price (if market opens today and CNN fear and greed value is available)
+2. Make prediction of highest gold price with preferred value of open prices
+3. See recent predictions and true values of daily highest gold price
 # How to run
 1. Run eda_and_backfill_featuregroup.py
 2. Run training_pipeline.py
@@ -24,5 +28,8 @@ Facebook Prophet
 5. Daily: predict today's highest gold price with saved model (feature_inference_training_pipeline_daily.py)
 6. Daily: retrain model on latest data in feature group (feature_inference_training_pipeline_daily.py)
 # Result
-Model evaluation method: MSE(highest gold price true value, highest gold price prediction)
-Recent predictions and true values: ![](./gold_price_prediction_recent.png)
+Model evaluation method: MSE(highest gold price true value, highest gold price prediction) \
+Recent predictions and true values (prediction: red--, true value: green- -): ![](./gold_price_prediction_recent.png) \
+Automated daily run test: from 2023.12.28 to 2024.01.07 run successfully, can skip insertion and prediction when any necessary data is
+unavailable \
+
