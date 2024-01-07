@@ -25,4 +25,4 @@ Facebook Prophet
 6. Daily: retrain model on latest data in feature group (feature_inference_training_pipeline_daily.py)
 # Result
 Model evaluation method: MSE(highest gold price true value, highest gold price prediction)
-Recent predictions and true values: 
+Recent predictions and true values: ![](./gold_price_prediction_recent.png)
