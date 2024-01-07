@@ -31,5 +31,5 @@ Facebook Prophet
 Model evaluation method: MSE(highest gold price true value, highest gold price prediction) \
 Recent predictions and true values (prediction: red--, true value: green- -): ![](./gold_price_prediction_recent.png) \
 Automated daily run test: from 2023.12.28 to 2024.01.07 run successfully, can skip insertion and prediction when any necessary data is
-unavailable \
+unavailable
 
