@@ -10,7 +10,7 @@ The aim of this project is to predict the daily highest price of gold using hist
 # Dataset
 The dataset consists of historical open prices for gold, platinum, USD, crude oil, and the CNN fear and greed index. The data is collected daily and spans multiple years. The historical prices are obtained from Yahoo Finance and the CNN fear and greed index API. The dataset is stored in Hopsworks feature store, providing a centralized and scalable storage solution for the project.
 
-Data resources:
+Data resources: \
 Gold price          : https://finance.yahoo.com/quote/GC%3DF?p=GC%3DF \
 Platinum price      : https://finance.yahoo.com/quote/PL%3DF?p=PL%3DF \
 USD index           : https://finance.yahoo.com/quote/DX-Y.NYB?p=DX-Y.NYB \
