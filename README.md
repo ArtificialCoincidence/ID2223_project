@@ -1,4 +1,5 @@
-# Project link: https://huggingface.co/spaces/ArtificialCoincidence/Daily_Gold_Highest_Price_Prediction \
+# Project link
+https://huggingface.co/spaces/ArtificialCoincidence/Daily_Gold_Highest_Price_Prediction
 # ID2223_project
 Title: Highest Daily Gold Price Prediction Using Time Series Analysis.
 
