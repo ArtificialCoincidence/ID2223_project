@@ -1,13 +1,19 @@
+# Project link: https://huggingface.co/spaces/ArtificialCoincidence/Daily_Gold_Highest_Price_Prediction \
 # ID2223_project
 Title: Highest Daily Gold Price Prediction Using Time Series Analysis.
-
 This is a project using open prices of gold, platinum, crude oil US dollar index(USD) and CNN fear and greed index to predict highest price of gold daily.
-# Author 
+# Authors
 Ruijia Dai, Zahra Khorasani Zavareh
 # Introduction
 The aim of this project is to predict the daily highest price of gold using historical open prices of various financial indicators, including gold itself, platinum, USD, crude oil, and the CNN fear and greed index. The prediction is achieved through time series analysis and the use of the Prophet forecasting model. The project leverages the Hopsworks platform for data storage, feature engineering, and model deployment.
 # Dataset
 The dataset consists of historical open prices for gold, platinum, USD, crude oil, and the CNN fear and greed index. The data is collected daily and spans multiple years. The historical prices are obtained from Yahoo Finance and the CNN fear and greed index API. The dataset is stored in Hopsworks feature store, providing a centralized and scalable storage solution for the project.
+Data resources/:
+Gold price          : https://finance.yahoo.com/quote/GC%3DF?p=GC%3DF \
+Platinum price      : https://finance.yahoo.com/quote/PL%3DF?p=PL%3DF \
+USD index           : https://finance.yahoo.com/quote/DX-Y.NYB?p=DX-Y.NYB \
+Crude oil price     : https://finance.yahoo.com/quote/CL%3DF?p=CL%3DF \
+Fear and greed index: https://edition.cnn.com/markets/fear-and-greed
 # Methodology
 # Data Retrieval and Preprocessing
 The project begins with the retrieval of historical data for gold, platinum, USD, crude oil, and the CNN fear and greed index. The data is processed and cleaned to handle missing values and ensure consistency across different indicators. The fear and greed index is reversed to align with the chronological order of other indicators.
@@ -28,12 +34,6 @@ To execute the code, follow these steps:
 1. Run eda_and_backfill_featuregroup.py
 2. Run training_pipeline.py
 3. Run feature_inference_training_pipeline_daily.py daily
-# Data resources
-gold price          : https://finance.yahoo.com/quote/GC%3DF?p=GC%3DF \
-platinum price      : https://finance.yahoo.com/quote/PL%3DF?p=PL%3DF \
-USD price           : https://finance.yahoo.com/quote/DX-Y.NYB?p=DX-Y.NYB \
-crude oil price     : https://finance.yahoo.com/quote/CL%3DF?p=CL%3DF \
-fear and greed index: https://edition.cnn.com/markets/fear-and-greed
 # Learning algorithm
 Facebook Prophet
 # Implementation
