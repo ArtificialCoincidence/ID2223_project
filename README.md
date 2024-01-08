@@ -1,6 +1,7 @@
 # Project link: https://huggingface.co/spaces/ArtificialCoincidence/Daily_Gold_Highest_Price_Prediction \
 # ID2223_project
 Title: Highest Daily Gold Price Prediction Using Time Series Analysis.
+
 This is a project using open prices of gold, platinum, crude oil US dollar index(USD) and CNN fear and greed index to predict highest price of gold daily.
 # Authors
 Ruijia Dai, Zahra Khorasani Zavareh
