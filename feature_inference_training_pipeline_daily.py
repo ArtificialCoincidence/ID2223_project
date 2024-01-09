@@ -27,9 +27,7 @@ INSTALL_PACKAGE = ['cmdstanpy==1.0.4', 'datetime', 'requests', 'pytz', 'bs4', 'j
 MODEL_DIR = "./gold_model"
 TEST_SPLIT = 5
 
-# API_KEY = "WrS8FeVgLISFnH7c.OHnfbWyBTWGM3hCwqa4oBfAElkpJ73Sq4UBXYeSTfpiRlTSBINBDadbvNSqhQpRj" # API of hopsworks
 FG_VERSION = 10
-MODEL_VERSION = 5
 FG_PRED_VERSION = 1
 FV_VERSION = 2
 
@@ -200,9 +198,9 @@ def get_model_from_hopsworks():
     fs = project.get_feature_store()
     
     mr = project.get_model_registry()
-    model = mr.get_best_model("price_model", "accuracy", "max")
+    model = mr.get_best_model("gold_model", "accuracy", "max")
     model_dir = model.download()
-    model = joblib.load(model_dir + "/price_model.pkl")
+    model = joblib.load(model_dir + "/gold_model.pkl")
 
     return model
 

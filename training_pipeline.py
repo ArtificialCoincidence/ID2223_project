@@ -79,7 +79,7 @@ def save_model(model, accuracy):
         os.mkdir(MODEL_DIR)
 
     # Save both our model and the confusion matrix to 'model_dir', whose contents will be uploaded to the model registry
-    joblib.dump(model, MODEL_DIR + "/price_model.pkl")  
+    joblib.dump(model, MODEL_DIR + "/gold_model.pkl")  
 
     project = hopsworks.login(api_key_value=API_KEY)
     fs = project.get_feature_store()

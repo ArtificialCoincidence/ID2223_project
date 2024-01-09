@@ -1,0 +1,8 @@
+requests
+hopsworks
+joblib==1.3.2
+prophet==1.1.4
+bs4
+datetime
+pytz
+cmdstanpy==1.0.5
